@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Steganography</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <h1>Image Steganography</h1>
+        <button id="dark-mode-toggle">Toggle Dark Mode</button> <!-- Dark Mode Toggle Button -->
+
+        <div id="main-options">
+            <button id="encode-option" class="option-button">
+                <i class="fas fa-lock"></i> Encode Message
+            </button>
+            <button id="decode-option" class="option-button">
+                <i class="fas fa-unlock"></i> Decode Message
+            </button>
+        </div>
+
+        <div id="encode-section" class="section" style="display: none;">
+            <h2>Encode Message</h2>
+            <textarea id="input-text" placeholder="Enter your secret message..."></textarea>
+            <button id="encode-button">Encode and Display Image</button>
+            <button id="download-button" style="display: none;">Download Image</button>
+        </div>
+
+        <div id="decode-section" class="section" style="display: none;">
+            <h2>Decode Hidden Message</h2>
+            <input type="file" id="file-input" accept="image/*">
+            <button id="decode-button">Decode Message</button>
+            <p id="decoded-message"></p>
+        </div>
+
+        <div id="output-container">
+            <canvas id="output-canvas"></canvas>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #6f42c1, #00bcd4);
+    color: #fff;
+    transition: background 0.5s ease;
+}
+
+body.dark-mode {
+    background: linear-gradient(135deg, #121212, #424242);
+    color: #e0e0e0;
+}
+
+#container {
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode #container {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+/* Dark Mode Toggle Button */
+#dark-mode-toggle {
+    margin: 15px 0;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#dark-mode-toggle:hover {
+    background-color: #666;
+}
+
+body.dark-mode #dark-mode-toggle {
+    background-color: #ddd;
+    color: #000;
+}
+
+.option-button {
+    padding: 20px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 40%;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+body.dark-mode .option-button {
+    background-color: #009688;
+}
+
+.option-button:hover {
+    background-color: #0056b3;
+}
+
+body.dark-mode .option-button:hover {
+    background-color: #00796b;
+}
+
+/* Sections */
+.section {
+    margin-top: 20px;
+    text-align: left;
+}
+
+textarea {
+    width: 100%;
+    height: 120px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    resize: none;
+}
+
+body.dark-mode textarea {
+    background: #333;
+    color: #fff;
+    border: 1px solid #555;
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 15px 0;
+    transition: background-color 0.3s ease;
+}
+
+body.dark-mode button {
+    background-color: #009688;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+body.dark-mode button:hover {
+    background-color: #00796b;
+}
+
+#output-container {
+    margin-top: 20px;
+}
+
+canvas {
+    width: 100%;
+    height: auto;
+    border: 2px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode canvas {
+    border: 2px solid #ccc;
+}
